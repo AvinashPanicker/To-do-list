@@ -16,6 +16,10 @@ function addTask(){
     function removeTask(){
         List.removeChild(newTask);
     }
+    function completedTask(){
+        newTask.classList.toggle('done');
+    }
+    newTask.addEventListener('click',completedTask);
 }
 
 function addByClick(){
